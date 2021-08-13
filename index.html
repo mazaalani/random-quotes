@@ -1,0 +1,45 @@
+<html lang="fr_CA">
+<head>
+    <!-- meta -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Exercice 4 | Balise template et engin de gabarit</title>
+	<meta name="description" content="Exercice 4 sur la balise template (sommatif) du cours 582-31F-MA Programmation d'interface Web 2">
+
+	<!-- styles -->
+	<link rel="stylesheet" type="text/css" href="./styles/styles.css">
+
+	<!-- scripts -->
+    <script type="module" src="./scripts/script.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<h1>Exercice 4 - Balise template et engin de gabarit <small>(sommatif)</small></h1>
+	</header>
+	
+    <main>
+
+		<div data-js-component="Quote">
+
+			<div>
+				<h3>Cliquez pour afficher une citation <i>random</i></h3>
+				<button>Citation</button>
+			</div>
+
+			<div data-js-quote></div>
+			
+			<template data-js-quote-template>
+				<blockquote cite="{{source}}" class="hidden" data-js-blockquote>
+					<h2>Citation #{{nb}}</h2>
+					<p>{{quote}}</p>
+					<footer>— {{author}}</footer>
+				</blockquote>
+			</template>
+
+		</div>
+
+	</main>
+</body>
+</html>

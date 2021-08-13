@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 8vw;
+}
+
+main,
+form,
+form + ul,
+button + ul {
+    margin-top: 50px;
+}
+
+div + div {
+    margin-top: 50px;
+}
+
+h1 {
+    margin: 0;
+}
+
+blockquote {
+    margin: 0;
+    padding-left: 30px;
+    position: relative;
+    transition: opacity .3s ease;
+}
+
+blockquote::before {
+    content: "";
+    background-color: orange;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 10px;
+}
+
+blockquote p {
+    font-size: 1.2em;
+    letter-spacing: .15;
+    line-height: 1.6;
+}
+
+blockquote footer {
+    letter-spacing: .5;
+}
+
+
+.hidden {
+    opacity: 0;
+}
